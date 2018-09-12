@@ -20,9 +20,24 @@ const aurora = {
     health: 150,
     strength: 25
 };
-console.log(`${aurora.name} has ${aurora.health} health points and ${aurora.strength} as strength`);
+//console.log(`${aurora.name} has ${aurora.health} health points and ${aurora.strength} as strength`);
 //lose 20 hp
 aurora.health -= 20
 //gain 10 strength
 aurora.strength += 10
-console.log(`${aurora.name} now has ${aurora.health} health points and ${aurora.strength} as strength`);
+//console.log(`${aurora.name} now has ${aurora.health} health points and ${aurora.strength} as strength`);
+function describe(character){
+    console.log(`${character.name} has ${character.health} health points and ${character.strength} as strength`)
+}
+
+describe(aurora)
+
+const ryu = {
+    name: "Ryu",
+    health: 150,
+    strength: 25,
+    describe(){
+        return `${this.name} has ${this.health} health points and ${this.strength} as strength`;
+    }
+}
+console.log(ryu.describe())
