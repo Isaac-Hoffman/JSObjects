@@ -27,6 +27,7 @@ const dog = {
         return "Grrr! Grrr!"
     }
 }
+//Print object info
 console.log(`${dog.name} is a ${dog.species} dog measuring ${dog.size}`);
 console.log(`Look, a cat! ${dog.name} barks: ${dog.bark()}`);
 
@@ -39,7 +40,10 @@ const account = {
     },
     describe(){}
 }
+//Print default account
 console.log(`Owner: ${account.name}, balance ${account.balance}`)
+//Add 250 credit then take 80
 account.credit(250)
 account.credit(-80)
+//Print updated account
 console.log(`Owner: ${account.name}, balance ${account.balance}`)
